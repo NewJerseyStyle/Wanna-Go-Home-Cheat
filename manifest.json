@@ -10,19 +10,15 @@
   },
   "browser_action": {
     "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_popup": "index.html"
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "contextMenus"
   ],
-  "content_scripts": [
-    {
-      "matches": [
-        "https://docs.google.com/forms/*"
-      ],
-      "js": [
-        "execute.js"
-      ]
-    }
-  ]
+  "background": {
+    "scripts": [
+      "execute.js"
+    ]
+  }
 }
