@@ -1,7 +1,11 @@
 function getClickHandler(info, tab) {
-//   if field is empty, input 000 and submit
-//   while field value not right, input value + 1
-    chrome.tabs.sendMessage(tab.id, {text: "9999"});
+    chrome.tabs.query({
+        "active": true,
+        "currentWindow": true
+    }, function (tabs) {
+        chrome.tabs.sendMessage(tabs[0].id, {
+            "functiontoInvoke": "cheat"
+        });
 };
 
 var normal = chrome.contextMenus.create({
