@@ -4,7 +4,7 @@
 玩過之後在想，好像可以試試說做一個外掛。剛好可以體驗一下如何製作 Chrome Extension 的說。
 
 ## 用法
-為降低濫用程度，沒有上架 CHrome 商店（大概也不會通過審核，而且我也懶的登錄註冊）各位請移步道 [Release 頁面](https://github.com/NewJerseyStyle/Wanna-Go-Home-Cheat/releases/tag/v1.0.0)下載 zip 文檔
+沒有上架 CHrome 商店，各位移步 [Release 頁面](https://github.com/NewJerseyStyle/Wanna-Go-Home-Cheat/releases/tag/v1.0.0)下載 zip 文檔
 
 解壓縮後在 Chrome 的【管理擴充功能】（`chrome://extensions/`）界面開啟右上角【開發人員模式】，手動【載入未封裝項目】
 
