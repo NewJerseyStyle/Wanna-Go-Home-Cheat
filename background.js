@@ -1,17 +1,9 @@
-function getClickHandler(info, tab) {
-    chrome.tabs.query({
-        "active": true,
-        "currentWindow": true
-    }, function (tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, {
-            "functiontoInvoke": "cheat"
-        });
-};
-
-var normal = chrome.contextMenus.create({
-    "title": "外掛啟動",
+chrome.contextMenus.create({
+    "title": "阿咯哈呣啦！",
     "type": "normal",
     "contexts": ['editable'],
-    "onclick": genericOnClick,
-    "targetUrlPatterns": ["https://docs.google.com/forms/*"]
+    "onclick": function(info, tab) {
+        chrome.tabs.sendMessage(tab.id, {text: "1997"});
+    },
+    "documentUrlPatterns": ["https://*.google.com/forms/d/*"]
 });
