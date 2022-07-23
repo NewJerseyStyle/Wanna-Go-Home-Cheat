@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "我先回家了",
+  "description": "Chrome外掛程序做的《我想回家了》表單遊戲外掛程序",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "contextMenus"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.google.com/forms/d/*"
+      ],
+      "js": [
+        "cheatscript.js"
+      ]
+    }
+  ]
+}
